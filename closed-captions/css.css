@@ -151,6 +151,7 @@ You probably want to change the styling.
 
 
 /* Sound differenciators */
+/* sound0 Begin van het fragment */
 .sound0 {
 	color: white;
 	background-color: black;
@@ -165,18 +166,86 @@ You probably want to change the styling.
 }
 
 
-/* The moment the class .sound1 is added to the body, the background is yellow */
+/* sound1 Alarm met diepere toon + "recite the baseline" */
 .sound1 {
+	background-color: orange;
+}
+
+.sound1 #video-mask {
+	aspect-ratio: 240.5/100;
+	display: grid;
+	overflow: hidden;
+	align-content: center;
+	transition: 1s;
+	box-shadow: none;
+}
+
+
+/* sound2 Alarm met hoge toon op de achtergrond */
+.sound2 {
 
 }
+
+
+
+.sound3 {
+
+}
+.sound3 #video-mask {
+}
+
+
+/* sound4 nog een diep alarm met + scene verandert naar binnenkant */
+.sound4 {
+	background-color: aqua;
+}
+
+
+/* sound5 man wordt uitgescholden */
+.sound5 {
+
+}
+
+/* sound6 nog een diep alarm, meer op de achtergrond */
+.sound6 {
+
+}
+
+/* sound7 nogmaals diep alarm, dit keer meer op de voorgrond */
+.sound7 {
+
+}
+
+/* sound8 eerste scene van het interview met de */
+.sound8 {
+	background-color: white;
+}
+
+
+/* sound9 geluid van de hoge pieptoon */
+.sound9 {
+	background: #000;
+	animation: pulsate 45s linear infinite;
+}
+@keyframes pulsate {
+	0% {background-color: black;}
+	100% {background-color: white;}
+}
+
+.sound10 {
+	background-color: white;
+	transition: opacity 20s;
+}
+
+
+
+
+
+
 
 /* The moment the class .sound1 is added to the body, the movie makes a turn */
 .sound1 #video-mask {
 
-}
-
-.sound8 {
-	background-color: white;
 }
 
 
