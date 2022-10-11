@@ -137,15 +137,14 @@ You probably want to change the styling.
 
 	font-family: "brenner slab";
 	font-style: italic;
-	font-weight: 800;
+	font-weight: 700;
 	font-size: 150px;
 }
 
 .p1.on {
 	/* yessir */
-	background: black;
-	color: yellow;
-	font-size: 200px;
+	color: white;
+	font-size: 10px;
 }
 
 
@@ -171,9 +170,10 @@ You probably want to change the styling.
 	animation: AlarmBackgroundChange 1.2s linear;
 }
 @keyframes AlarmBackgroundChange {
-	0% {background-color: white;}
+	0% {background-color: #000;}
+	20% {background-color: #fff;}
 	50% {background-color: #f45f5f;}
-	100% {background-color: white;}
+	100% {background-color: #000;}
 }
 
 .sound1 #video-mask {
@@ -202,13 +202,14 @@ You probably want to change the styling.
 
 /* sound4 nog een diep alarm met + scene verandert naar binnenkant */
 .sound4 {
-	background-color: #fff;
+	background-color: #000;
 	animation: Alarm2 1.2s linear;
 }
 @keyframes Alarm2 {
-	0% {background-color: white;}
+	0% {background-color: #000;}
+	20% {background-color: #fff;}
 	50% {background-color: #f45f5f;}
-	100% {background-color: white;}
+	100% {background-color: #000;}
 }
 
 
@@ -229,14 +230,14 @@ You probably want to change the styling.
 
 /* sound8 eerste scene van het interview met de */
 .sound8 {
-	background-color: white;
+	background-color: #000;
 }
 
 
 /* sound9 geluid van de hoge pieptoon */
 .sound9 {
 	background: #000;
-	animation: pulsate 45s linear infinite;
+	animation: pulsate 40s linear 1;
 }
 @keyframes pulsate {
 	0% {background-color: black;}
@@ -304,21 +305,7 @@ Mijn eigen code
 	100% { transform: scale(1)   translate(10px, -30px); }
 }
 .sound1 .blobBlue {
-	position: absolute;
-	top: 0;
-	left: 0;
-	fill: #023F92;
-	width: 50vmax;
-	z-index: -1;
-	animation: moveBlue 6s ease-in-out infinite;
-	transform-origin: 50% 50%;
 	opacity: 0%;
-
-	-webkit-filter: blur(50px);
-  	-moz-filter: blur(50px);
-  	-o-filter: blur(50px);
-  	-ms-filter: blur(50px);
-  	filter: blur(50px);
 }
 
 .sound0 .blobRed {
@@ -345,19 +332,5 @@ Mijn eigen code
 	100% { transform: scale(1)   translate(10px, -30px); }
 }
 .sound1 .blobRed {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	fill: #ac4a11;
-	width: 50vmax;
-	z-index: -1;
-	animation: moveRed 6s ease-in-out infinite;
-	transform-origin: 50% 50%;
 	opacity: 0%;
-
-	-webkit-filter: blur(50px);
-  	-moz-filter: blur(50px);
-  	-o-filter: blur(50px);
-  	-ms-filter: blur(50px);
-  	filter: blur(50px);
 }
