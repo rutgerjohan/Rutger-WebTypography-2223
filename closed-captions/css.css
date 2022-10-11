@@ -5,10 +5,16 @@ Show them when they receive the class 'on'
 Hide them when they receive the class 'off'
 Feel free to adjust the defaults to your needs.
 ********************************************** */
+#closed-captions {
+	position: relative;
+}
+
 #closed-captions p {
 	opacity: 0;
 	transition: .05s;
 	position: absolute;
+	width: 100%;
+	text-align: center;
 }
 #closed-captions .on {
 	opacity: 1;
@@ -18,7 +24,7 @@ Feel free to adjust the defaults to your needs.
 	opacity: 0;
 }
 .voice1 {
-	font-style: italic;
+	/* font-style: italic; */
 }
 .voice2 {
 	font-weight: 500;
@@ -46,7 +52,7 @@ You probably want to change the styling.
 	opacity: 1;
 	transition: 0s;
 
-	margin-left: 200px;
+	/* margin-left: 170px; */
 	margin-right: 40px;
 	font-weight: 600;
 	font-family: "brenner sans";
@@ -59,6 +65,7 @@ You probably want to change the styling.
 	
 	font-weight: 300;
 	font-family: "brenner mono light";
+	font-style: italic;
 }
 .p0.on span:nth-of-type(3) {
 	/* D */
@@ -68,6 +75,7 @@ You probably want to change the styling.
 	
 	font-weight: 300;
 	font-family: "brenner mono light";
+	font-style: italic;
 }
 .p0.on span:nth-of-type(4) {
 	/* 6 */
@@ -77,6 +85,7 @@ You probably want to change the styling.
 
 	font-weight: 300;
 	font-family: "brenner mono light";
+	font-style: italic;
 }
 .p0.on span:nth-of-type(5) {
 	/* - */
@@ -93,6 +102,7 @@ You probably want to change the styling.
 
 	font-weight: 300;
 	font-family: "brenner mono light";
+	font-style: italic;
 }
 .p0.on span:nth-of-type(7) {
 	/* . */
@@ -102,6 +112,7 @@ You probably want to change the styling.
 
 	font-weight: 300;
 	font-family: "brenner mono light";
+	font-style: italic;
 }
 .p0.on span:nth-of-type(8) {
 	/* 7 */
@@ -111,6 +122,7 @@ You probably want to change the styling.
 
 	font-weight: 300;
 	font-family: "brenner mono light";
+	font-style: italic;
 }
 .p0.on span:nth-of-type(9) {
 	/* let's */
@@ -144,7 +156,31 @@ You probably want to change the styling.
 .p1.on {
 	/* yessir */
 	color: white;
-	font-size: 10px;
+
+	font-family: "brenner sans";
+	font-weight: bold;
+	font-size: 86px;
+
+	margin-top: 20px;
+}
+
+/* recite baseline */
+.p2.on {
+
+}
+
+/* And blood... */
+.p4.on {
+	font-size: 48px;
+	font-family: "brennen sans";
+	font-style: bold;
+
+	animation: animateText 3s linear 1;
+}
+@keyframes animateText {
+	0% {left: 70vw}
+	/* 50% {left: 50vw} */
+	100% {left: -30vw;}
 }
 
 
@@ -155,7 +191,6 @@ You probably want to change the styling.
 	color: white;
 	background-color: black;
 }
-
 .sound0 #video-mask {
 	box-shadow:
 		0px 0px 100px 10px blue,
@@ -164,7 +199,6 @@ You probably want to change the styling.
 		transition: opacity 0.3s ease-in-out;
 }
 
-
 /* sound1 Alarm met diepere toon + "recite the baseline" */
 .sound1 {
 	animation: AlarmBackgroundChange 1.2s linear;
@@ -172,10 +206,9 @@ You probably want to change the styling.
 @keyframes AlarmBackgroundChange {
 	0% {background-color: #000;}
 	20% {background-color: #fff;}
-	50% {background-color: #f45f5f;}
+	50% {background-color: #f00;}
 	100% {background-color: #000;}
 }
-
 .sound1 #video-mask {
 	aspect-ratio: 240.5/100;
 	display: grid;
@@ -208,7 +241,7 @@ You probably want to change the styling.
 @keyframes Alarm2 {
 	0% {background-color: #000;}
 	20% {background-color: #fff;}
-	50% {background-color: #f45f5f;}
+	50% {background-color: #f00;}
 	100% {background-color: #000;}
 }
 
