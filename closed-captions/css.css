@@ -25,9 +25,11 @@ Feel free to adjust the defaults to your needs.
 }
 .voice1 {
 	/* font-style: italic; */
+	font-family: "brenner sans";
 }
 .voice2 {
 	font-weight: 500;
+	font-family: "brenner sans";
 }
 
 
@@ -43,7 +45,7 @@ You probably want to change the styling.
 ********************************************** */
 .p0 span {
 	opacity: 0;
-	font-family: brenner;
+	font-family: "brenner";
 
 	font-size: 45px;
 }
@@ -169,6 +171,25 @@ You probably want to change the styling.
 
 }
 
+
+.p3.on {
+	font-size: 24px;
+	font-family: "brennen sans";
+	font-style: bold;
+}
+.p3.on span:nth-of-type(2) {
+	/* animation: spinText 1s ease-in infinite; */
+
+	background-color: blue;
+	transition: transform 2s ease-in-out;
+	transform: rotate(-90deg);
+}
+@keyframes spinText {
+	0% {transform: scale(1) rotate(0deg);}
+	50% {transform: scale(1) rotate(40deg);}
+	100% {transform: scale(1) rotate(-90deg);}
+}
+
 /* And blood... */
 .p4.on {
 	font-size: 48px;
@@ -178,9 +199,9 @@ You probably want to change the styling.
 	animation: animateText 3s linear 1;
 }
 @keyframes animateText {
-	0% {left: 70vw}
+	0% {left: 65vw}
 	/* 50% {left: 50vw} */
-	100% {left: -30vw;}
+	100% {left: -25vw;}
 }
 
 
@@ -247,8 +268,11 @@ You probably want to change the styling.
 
 
 /* sound5 man wordt uitgescholden */
-.sound5 {
-
+.sound5 #video-mask {
+	margin-left: 260px;
+}
+.sound6 #video-mask {
+	margin-left: 0;
 }
 
 /* sound6 nog een diep alarm, meer op de achtergrond */
@@ -262,13 +286,13 @@ You probably want to change the styling.
 }
 
 /* sound8 eerste scene van het interview met de */
-.sound8 {
+.sound9 {
 	background-color: #000;
 }
 
 
 /* sound9 geluid van de hoge pieptoon */
-.sound9 {
+.sound10 {
 	background: #000;
 	animation: pulsate 40s linear 1;
 }
@@ -277,7 +301,7 @@ You probably want to change the styling.
 	100% {background-color: white;}
 }
 
-.sound10 {
+.sound11 {
 	background-color: white;
 	transition: opacity 20s;
 }
@@ -296,16 +320,15 @@ body {
 	margin: 60px 80px;
 }
 #video-mask {
-	aspect-ratio: 240.5/100;
+	aspect-ratio: 240.45/100;
 	display: grid;
 	overflow: hidden;
 	align-content: center;
 	transition: 1s;
 }
-
 iframe {
-	width: 80vw;
-	height: 53.33333333vw;
+	width: 70vw;
+	height: 46.66vw;
 	margin-top: -0.35vw;
 }
 
@@ -313,13 +336,12 @@ iframe {
 /************
 Mijn eigen code
 *************/
-
 .sound0 .blobBlue {
 	position: absolute;
 	top: 0;
 	left: 0;
 	fill: #023F92;
-	width: 50vmax;
+	width: 30vmax;
 	z-index: -1;
 	animation: moveBlue 6s ease-in-out infinite;
 	transform-origin: 50% 50%;
@@ -332,9 +354,8 @@ Mijn eigen code
   	filter: blur(50px);
 }
 @keyframes moveBlue {
-	0%   { transform: scale(1)   translate(10px, -30px); }
-	33%  { transform: scale(0.8, 1) translate(80vw, 20vh) rotate(160deg); }
-	66%  { transform: scale(1.3) translate(0vw, 25vh) rotate(-20deg); }
+	0%   { transform: scale(1)   translate(0vw, -30px); }
+	50% {transform: scale(1) translate(65vw, 25vh) rotate(80deg);}
 	100% { transform: scale(1)   translate(10px, -30px); }
 }
 .sound1 .blobBlue {
@@ -346,7 +367,7 @@ Mijn eigen code
 	bottom: 0;
 	right: 0;
 	fill: #ac4a11;
-	width: 50vmax;
+	width: 30vmax;
 	z-index: -1;
 	animation: moveRed 6s ease-in-out infinite;
 	transform-origin: 50% 50%;
@@ -359,10 +380,9 @@ Mijn eigen code
   	filter: blur(50px);
 }
 @keyframes moveRed {
-	0%   { transform: scale(1)   translate(10px, -30px); }
-	33%  { transform: scale(0.8, 1) translate(-80vw, 20vh) rotate(160deg); }
-	66%  { transform: scale(1.3) translate(15vw, 0vh) rotate(-20deg); }
-	100% { transform: scale(1)   translate(10px, -30px); }
+	0%   { transform: scale(1)   translate(-1vw, -300px); }
+	50% {transform: scale(1) translate(-70vw, -100px) rotate(-80deg);}
+	100% { transform: scale(1)   translate(-1vw, -300px); }
 }
 .sound1 .blobRed {
 	opacity: 0%;
