@@ -14,7 +14,7 @@ Feel free to adjust the defaults to your needs.
 	transition: .05s;
 	position: absolute;
 	width: 100%;
-	text-align: center;
+	/* text-align: center; */
 }
 #closed-captions .on {
 	opacity: 1;
@@ -26,10 +26,12 @@ Feel free to adjust the defaults to your needs.
 .voice1 {
 	/* font-style: italic; */
 	font-family: "brenner sans";
+	text-align: left;
 }
 .voice2 {
 	font-weight: 500;
 	font-family: "brenner sans";
+	text-align: right;
 }
 
 
@@ -132,6 +134,7 @@ You probably want to change the styling.
 	transition: 0s 3s;
 
 	font-weight: 600;
+	font-size: 45px;
 	font-family: "brenner sans";
 }
 .p0.on span:nth-of-type(10) {
@@ -149,10 +152,9 @@ You probably want to change the styling.
 
 	margin-left: 30px;
 
-	font-family: "brenner slab";
+	font-family: "brenner sans";
 	font-style: italic;
-	font-weight: 700;
-	font-size: 150px;
+	font-weight: 600;
 }
 
 .p1.on {
@@ -161,7 +163,7 @@ You probably want to change the styling.
 
 	font-family: "brenner sans";
 	font-weight: bold;
-	font-size: 86px;
+	font-size: 45px;
 
 	margin-top: 20px;
 }
@@ -291,7 +293,6 @@ You probably want to change the styling.
 }
 
 
-/* sound9 geluid van de hoge pieptoon */
 .sound10 {
 	background: #000;
 	animation: pulsate 40s linear 1;
@@ -300,6 +301,38 @@ You probably want to change the styling.
 	0% {background-color: black;}
 	100% {background-color: white;}
 }
+/* 
+.sound10 p {
+	position: relative;
+}
+.sound10 .voice1 {
+	text-align: left;
+}
+.sound10 .voice2 {
+	text-align: right;
+} */
+
+
+.sound10 iframe {
+	animation: videoGroter 42s linear 1;
+}
+@keyframes videoGroter {
+	0% {
+		width: 70vw;
+		height: 46.66vw;
+		margin-top: -0.35vw;}
+	99% {
+		width: 80vw;
+		height: 53.33vw;
+		margin-top: -0.35vw
+	}
+	100% {
+		width: 70vw;
+		height: 46.66vw;
+		margin-top: -0.35vw;
+	}
+}
+
 
 .sound11 {
 	background-color: white;
