@@ -175,36 +175,35 @@ You probably want to change the styling.
 
 
 .p3.on {
-	font-size: 24px;
-	font-family: "brennen sans";
-	font-style: bold;
-}
-.p3.on span:nth-of-type(2) {
-	/* animation: spinText 1s ease-in infinite; */
-
-	background-color: blue;
-	transition: transform 2s ease-in-out;
-	transform: rotate(-90deg);
-}
-@keyframes spinText {
-	0% {transform: scale(1) rotate(0deg);}
-	50% {transform: scale(1) rotate(40deg);}
-	100% {transform: scale(1) rotate(-90deg);}
+	text-align: center;
+	font-size: 32px;
+	font-family: "Brenner Script";
+	font-style: normal;
+	font-weight: 800;
 }
 
 /* And blood... */
 .p4.on {
 	font-size: 48px;
-	font-family: "brennen sans";
-	font-style: bold;
+	font-family: "Brenner Script";
+	font-style: normal;
+	font-weight: 600;
 
-	animation: animateText 3s linear 1;
+	animation: animateText 5s ease-out 1;
 }
 @keyframes animateText {
-	0% {left: 65vw}
-	/* 50% {left: 50vw} */
-	100% {left: -25vw;}
+	0% {left: 75vw}
+	100% {left: -75vw;}
 }
+
+.p6.on {
+	text-align: center;
+	font-size: 32px;
+	font-family: "Brenner Script";
+	font-style: normal;
+	font-weight: 800;
+}
+
 
 
 
@@ -241,8 +240,6 @@ You probably want to change the styling.
 	box-shadow: none;
 }
 
-
-/* sound2 Alarm met hoge toon op de achtergrond */
 .sound2 {
 
 }
@@ -255,8 +252,6 @@ You probably want to change the styling.
 .sound3 #video-mask {
 }
 
-
-/* sound4 nog een diep alarm met + scene verandert naar binnenkant */
 .sound4 {
 	background-color: #000;
 	animation: Alarm2 1.2s linear;
@@ -301,16 +296,6 @@ You probably want to change the styling.
 	0% {background-color: black;}
 	100% {background-color: white;}
 }
-/* 
-.sound10 p {
-	position: relative;
-}
-.sound10 .voice1 {
-	text-align: left;
-}
-.sound10 .voice2 {
-	text-align: right;
-} */
 
 
 .sound10 iframe {
